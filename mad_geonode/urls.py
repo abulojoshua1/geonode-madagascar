@@ -1,10 +1,10 @@
 from django.conf.urls import url, include
-from django.views.generic import TemplateView
 from partenaire.api import PartenaireResource
 
 part_res= PartenaireResource()
 
 from geonode.urls import urlpatterns
+from oca.views import HomePage
 
 urlpatterns += [
 ## include your urls here
@@ -13,6 +13,6 @@ urlpatterns += [
 
 urlpatterns = [
    url(r'^/?$',
-       TemplateView.as_view(template_name='site_index.html'),
+       HomePage.as_view(template_name='site_index.html'),
        name='home'),
 ] + urlpatterns

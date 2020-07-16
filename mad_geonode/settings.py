@@ -48,4 +48,4 @@ LOCALE_PATHS = (
     os.path.join(LOCAL_ROOT, 'locale'),
     ) + LOCALE_PATHS
 
-INSTALLED_APPS = INSTALLED_APPS + ('partenaire', 'mad_geonode',)
+INSTALLED_APPS = INSTALLED_APPS + ('partenaire', 'mad_geonode', 'oca')
